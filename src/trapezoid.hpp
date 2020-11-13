@@ -75,12 +75,14 @@ Trapezoid<T>::Trapezoid(std::istream& is) {
 
 template <class T>
 std::ostream& operator<<(std::ostream& os, Trapezoid<T>& t) {
-    os << "["
-    << " (" << t.a.first << ", " << t.a.second << "), "
-    << "(" << t.b.first << ", " << t.b.second << "), "
-    << "(" << t.c.first << ", " << t.c.second << "), "
-    << "(" << t.d.first << ", " << t.d.second << ") "
-    << "]\n";
+    if (t.valid) {
+        os << "["
+        << " (" << t.a.first << ", " << t.a.second << "), "
+        << "(" << t.b.first << ", " << t.b.second << "), "
+        << "(" << t.c.first << ", " << t.c.second << "), "
+        << "(" << t.d.first << ", " << t.d.second << ") "
+        << "]\n";
+    }
     return os;
 }
 

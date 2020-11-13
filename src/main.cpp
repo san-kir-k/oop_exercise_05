@@ -11,13 +11,15 @@
 #include "trapezoid.hpp"
 
 void print(Trapezoid<double> t) {
-    std::cout << t;
+    if (t.valid) {
+        std::cout << t;
+    }
 }
 
 // мануал
 void help() {
     std::cout << "Command -- Description\n" <<
-                "1  -- Add figure \n" <<
+                "1  [idx] -- Add figure \n" <<
                 "2 [idx] -- Delete figure by index from vector\n" <<
                 "3 -- Display vector\n" << 
                 "4 -- Display count of figures with less area\n"
