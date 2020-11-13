@@ -26,7 +26,7 @@ void help() {
 }
 
 void mainLoop() {
-    int command = 0, idx = 0, type = 0;
+    int command = 0, idx = 0;
     List<Trapezoid<double>> l;
     std::string s;
     while (std::cout << "Cmd: " && std::cin >> s) {
