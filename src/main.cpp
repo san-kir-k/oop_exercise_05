@@ -23,7 +23,7 @@ void help() {
                 "1  [idx] -- Add figure \n" <<
                 "2 [idx] -- Delete figure by index from vector\n" <<
                 "3 -- Display vector\n" << 
-                "4 -- Display count of figures with less area\n"
+                "4 -- Display count of figures with less area\n" <<
                 "5 -- Display help\n" <<
                 "6 -- End program" << std::endl;
 }
