@@ -1,3 +1,4 @@
+// М8О-206Б-19 Киреев А.К.
 #pragma once
 #include <iostream>
 #include <algorithm>
